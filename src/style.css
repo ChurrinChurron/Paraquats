@@ -1,0 +1,297 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+
+    position: relative;
+    background: url("../assets/fondo.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.fondoColor {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(9,55,94,0.75);
+}
+
+/*--PARAQUATS CONTENT--*/
+
+.paraquats {
+
+    position: relative;
+    z-index: 1;
+    padding: 1em 2em;
+}
+
+.logo {
+
+    margin: 0 auto;
+    display: block;
+}
+
+.paraquats__content h2 {
+
+    text-align: center;
+    font-weight: 500;
+    max-width: 15em;
+    margin: .8em auto .3em auto;
+}
+
+.paraquats__content p {
+
+    text-align: center;
+    font-size: .780em;
+    max-width: 20em;
+    line-height: 1.750em;
+    margin: 0 auto;
+}
+
+.paraquats__content h3 {
+
+    margin-top: 1em;
+    text-align: center;
+    font-size: .9em;
+}
+
+.bidon {
+
+    display: none;
+}
+
+/*--PARAQUATS FORM--*/
+
+.paraquats__form {
+
+    margin: 1em 0;
+}
+
+form {
+
+    max-width: 20em;
+    margin: 0 auto;
+    padding: 1.5em;
+    background: rgba(26,41,62,1);
+}
+
+form h4 {
+
+    margin-bottom: .8em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+form h4 span {
+
+    font-size: .7em;
+    font-weight: 400;
+    color: #da9537;
+}
+
+:is(input[type=text], input[type=email], input[type=tel]) {
+
+    width: 100%;
+    background: #dddfe2;
+    color: #6a6a6a;
+    padding: .5em;
+    margin: .5em 0;
+    border-radius: .4em;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.form__radio {
+
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+    margin-top: .6em;
+}
+
+form label {
+
+    font-size: .750em;
+    line-height: 1.6em;
+}
+
+input[type=submit] {
+
+    margin-top: 1.3em;
+    width: 100%;
+    padding: 1.1em;
+    background: #f7941d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: .3em;
+    font-size: .950em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+
+    background: #eb8016;
+}
+
+/*--FOOTER--*/
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    padding: .7em;
+    background: #1a212b;
+}
+
+footer a {
+
+    text-decoration: none;
+    padding: .150em .7em;
+    border: 1px solid #333;
+    border-radius: .3em;
+    color: #fff;
+}
+
+footer a:hover {
+
+    background: #141c29;
+}
+
+@media screen and (width > 1200px) {
+    
+    .paraquats {
+
+        display: flex;
+        gap: 4em;
+        justify-content: center;
+        padding: 0 2em 2em 2em;
+    }
+
+    .paraquats__content {
+
+        padding: 1em;
+    }
+
+    .logo {
+
+        margin: 0;
+        width: 7em;
+    }
+    
+    .paraquats__content h2 {
+    
+        text-align: left;
+        max-width: 16em;
+        margin: .3em 0 .3em 0;
+        font-size: 2.4em;
+        line-height: 1.1em;
+    }
+    
+    .paraquats__content p {
+    
+        text-align: left;
+        font-size: 1.3em;
+        max-width: 35em;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    
+    .paraquats__content h3 {
+    
+        text-align: left;
+        font-size: 1.2em;
+    }
+    
+    .bidon {
+    
+        display: block;
+        margin-top: 4em;
+        width: 12.2em;
+    }
+
+    /*--PARAQUATS FORM--*/
+
+    .paraquats__form {
+
+        margin: 0;
+    }
+
+    form {
+
+        max-width: 26em;
+        padding: 3em 4em;
+    }
+
+    form h4 {
+
+        margin-bottom: .3em;
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+
+    form h4 span {
+
+        font-size: .7em;
+        font-weight: 400;
+        color: #da9537;
+    }
+
+    :is(input[type=text], input[type=email], input[type=tel]) {
+
+        font-size: 1.1em;
+    }
+
+    .form__radio {
+
+        display: flex;
+        align-items: flex-start;
+        gap: .5em;
+        margin-top: .6em;
+    }
+
+    input[type=radio] {
+
+        position: relative;
+        top: .2em;
+    }
+
+    input[type=submit] {
+
+        font-size: 1em;
+    }
+
+    /*--FOOTER--*/
+
+    footer {
+
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.footer__conten {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    width: 76em;
+    margin: 0 auto;
+}
+
+}
